@@ -36,7 +36,7 @@ public class MyCurrencyServiceAspect {
                 .formatted(joinPoint.getSignature().getName(),
                         exception.getClass().getSimpleName()));
     }
-    @Around("annotationPointCut()")
+    //@Around("annotationPointCut()")
     public Object aroundAdvice(ProceedingJoinPoint joinPoint)throws Throwable{
         System.out.println("Before %s method invoked."
                 .formatted(joinPoint.getSignature().getName()));

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component @Secured
 public class MyCurrencyService {
+
     public void loadCurrency(int num){
 
     }

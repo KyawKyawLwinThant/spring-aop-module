@@ -11,7 +11,7 @@ import java.util.Arrays;
 @Component
 public class AlgoCurrencyServiceAspect {
 
-   // @Before("target(org.example.service.AlgoCurrencyService)")
+    @Before("execution( * org.example.service.*.*(..))")
     public void beforeCurrencyAdvice(JoinPoint joinPoint){
         System.out.println(
                 "%s method invoked before with %s."
